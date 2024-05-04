@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        table {
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 20px;
+            border: 1px solid #000000;
+        }
+        th {
+            background-color:rgb(51, 152, 199);
+        }
+    </style>
+</head>
+<body>
+    <center><h1 style="color:rgb(9, 3, 11);">EMPLOYEE PORTAL</h1></center>
+    <form action="submit_form.php" method="post">
+        <table>
+            <tr>
+                <th colspan="2">Employee Information</th>
+            </tr>
+            <tr>
+                <td>registration no:</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="firstname" required></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lastname" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <td>Street:</td>
+                <td><input type="text" name="street" required></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><input type="text" name="city" required></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text" name="state" required></td>
+            </tr>
+            <tr>
+                <td>Zip Code:</td>
+                <td><input type="text" name="zipcode" required></td>
+            </tr>
+            <tr>
+                <td>Contact:</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Done"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
